@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: #e3f4fc;
+    padding: 10rem;
+}
+
+.error{
+    padding: 10px;
+    background-color: #0F2432;
+    margin: 2rem;
+    color: #d9db30;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: center;
+    display: none;
+}
+
+main{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    gap: 9rem;
+    width: 70%;
+    position: relative;
+    left: 13rem;
+}
+
+input{
+    text-align: end;
+    background-color: #e3f4fc;
+    border: 2px solid #e3f4fc;
+}
+
+.amount input{
+    width: 18rem;
+    height: 2rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    border: 2px solid #e3f4fc;
+}
+
+.section1{
+    width: 30%;
+}
+
+.header{
+    display: flex;
+    gap: 4rem;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.header h3{
+    font-size: 1em;
+}
+
+.term-rate{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+#tr-number{
+    width: 8.7rem;
+    height: 2rem;
+    border: 2px solid #e3f4fc;
+}
+
+.m-type{
+    position: relative;
+    top: -7px;
+}
+
+.p-type input{
+border: 2px soild grey;
+}
+
+.repay{
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: -6.4rem;
+    white-space: nowrap;
+    padding: 7px 4rem;
+    margin-bottom: -12px;
+}
+
+.repay label{
+    position: relative;
+    left: -3rem;
+    white-space: nowrap;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.repay input{
+    position: relative;
+    left: -3.4rem;
+    top: 2px;
+}
+
+.interest{
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: -6.4rem;
+    white-space: nowrap;
+    padding: 7px 4rem;
+}
+
+.interest label{
+    position: relative;
+    left: -3rem;
+    white-space: nowrap;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.interest input{
+    position: relative;
+    left: -3.4rem;
+    top: 2px;
+}
+
+button{
+    padding: 5px 1.5rem;
+    white-space: nowrap;
+    color: #133041;
+    font-weight: 790;
+    font-size: 0.7em;
+    background-color: #d9db30;
+    border: 1px solid #d9db30;
+    border-radius: 30px;
+}
+
+button img{
+    width: 1.3em;
+    margin-right: 1rem;
+}
+
+.b-text{
+    position: relative;
+    top: -3px;
+    left: -5px;
+}
+
+.section2{
+    background-color: #133040;
+    width: 100%;
+    border-radius: 15px;
+    border-bottom-left-radius: 50px;
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+
+.story-r h5{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0.5rem auto 0.5rem;
+}
+
+.story-r p{
+    font-size: 0.6em;
+    color: #9abbce;
+    margin-bottom: 1rem;
+}
+
+.results{
+    border: 2px solid #0F2432;
+    border-radius: 10px;
+    background-color: #0F2432;
+    box-shadow: inset 0 2px 0 #d9db30;
+    padding: 1rem;
+}
+
+.results p{
+    font-size: 0.6em;
+    color: #9abbce;
+    margin-bottom: 5px;
+}
+
+.results h1{
+    font-size: 2.5em;
+    color: #d9db30;
+}
+
+.results h4{
+    font-size: 1.5em;
+    color: #ffff;
+}
+
+hr{
+    margin: 1rem auto;
+}

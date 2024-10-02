@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <p class="error"></p>
+    <main>
+        <section class="section1">
+            <div class="header">
+                <h3 style="color: #133040;">Mortgage Calculator</h3>
+                <p style="text-decoration: underline; color: #8b969c; font-size: 0.8em;" >Clear all</p>
+            </div>
+
+            <div class="amount">
+                <label for="amount" id="amount" style="color: #8a959b; font-size: 0.7em;">Mortgage Amount</label>
+                <br>
+                <input type="number" id="a-number" placeholder="$">
+            </div>
+
+            <div class="term-rate">
+                <div class="term">
+                    <label for="term" id="term" style="color: #8a959b; font-size: 0.7em;">Mortgage term</label>
+                    <br>
+                    <input type="number" id="tr-number" placeholder="years" style="text-align: end;" class="tr-number">
+                </div>
+                <div class="rate">
+                    <label for="rate" id="rate" style="margin-bottom: 0.5rem; color: #8a959b; font-size: 0.7em;">Interest Rate</label>
+                    <br>
+                    <input type="number" id="tr-number" placeholder="%" style="text-align: end;" class="tr-rate">
+                </div>
+            </div>
+
+            <div class="type" style="margin-bottom: 2rem;">
+                <label for="mortgage-type" class="m-type" style="color: #8a959b; font-size: 0.7em;">Mortgage type</label>
+                <br>
+                <div id="m-type">
+                    <div class="repay">
+                        <input type="radio" name="options" id="option 1">
+                        <label for="option 1" id="type" style="color: #133040;" class="type-r">Repayment</label>
+                    </div>
+                    <br>
+                    <div class="interest">
+                        <input type="radio" name="options" id="option 2">
+                        <label for="option 2" id="type" style="color: #133040;" class="type-i">Interest Only</label>
+                    </div>
+                </div>
+            </div>
+            
+            <button><img src="./img/icon-calculator.svg" alt=""><span class="b-text" onclick="calculateMortgage()" >Calculate Repayments</span></button>
+        </section>
+
+
+        <section class="section2">
+            <div class="story-r">
+                <h5>Your results</h5>
+                <p>Your results are shown below based on the information you provided. 
+                To adjust the results, edit the form and click “calculate repayments” again.</p>
+            </div>
+
+            <div class="results">
+                <p>Your monthly repayments</p>
+                <h1>$<span class="monthly-repayments">0.00</span></h1>
+                <hr>
+                <p>Total you will repay over the term</p>
+                <h4>$<span class="total-payment">0.00</span></h4>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
